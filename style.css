@@ -35,16 +35,6 @@
   /*Borders*/
   --primary-header-border: #e8e8e8;
   --primary-advantages-border: var(--primary-header-border);
-  /*
- 
-  #F95707
-  
-  #F3F7F4
-  #1F1F1F
-  #ffffff
-  #F3F7F4
-  #c6d6c9
-*/
 }
 
 * {
@@ -69,7 +59,7 @@ li {
 .header {
   display: flex;
   flex-direction: column;
-  padding: 16px 312px 0;
+  padding: 0px 312px 0;
   position: relative;
 }
 /*Top header bar*/
@@ -77,6 +67,7 @@ li {
   display: flex;
   align-items: center;
   position: relative;
+  height: 111px;
 }
 .header__top-bar::after {
   content: "";
@@ -92,6 +83,7 @@ li {
 .header__logo-container {
   padding-right: 42px;
   padding-bottom: 16px;
+  height: 78px;
 }
 
 .header__logo {
@@ -213,7 +205,6 @@ li {
   position: absolute;
   left: -312px;
   right: -312px;
-  /* bottom: 2px; */
   bottom: 0;
   height: 1px;
   background-color: var(--primary-header-border);
@@ -267,14 +258,13 @@ li {
   height: 469px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .main__title {
   font-weight: var(--primary-font-weight-bold);
   font-size: var(--primary-font-size-largest);
   color: var(--primary-color);
   line-height: var(--primary-line-height-largest);
-  margin-bottom: 30px;
+  margin-bottom: 52px;
 }
 .main__last-line {
   color: var(--primary-accent-color-2);
@@ -285,6 +275,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   width: 416px;
+  margin-bottom: 72px;
 }
 .main__btn--price,
 .main__btn--how,
@@ -331,14 +322,13 @@ li {
 .advantages {
   display: flex;
   padding: 62px 312px 100px;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 /*Advantage card */
 .advantages__card {
   width: 416px;
   height: 152px;
   padding: 20px 0px 24px 30px;
-  /* padding: 20px 84px 24px 30px; */
   border: 1px solid var(--primary-advantages-border);
   border-radius: 15px;
 }
@@ -372,14 +362,21 @@ li {
   font-size: var(--primary-font-size-small);
   line-height: var(--primary-line-height-small);
   color: var(--primary-color);
+}
+.advantages__card:nth-child(1) .advantages__description {
   width: 302px;
+}
+.advantages__card:nth-child(2) .advantages__description {
+  width: 341px;
+}
+.advantages__card:nth-child(3) .advantages__description {
+  width: 300px;
 }
 /*About section*/
 .about {
   display: flex;
   padding: 0 312px;
   margin-bottom: 30px;
-  justify-content: space-between;
   width: 100%;
 }
 /*About content*/
@@ -412,7 +409,10 @@ li {
   font-weight: var(--primary-font-weight);
   line-height: var(--primary-line-height-small);
   color: var(--primary-color);
+
+  width: 100%;
 }
 .about__paragraph:not(:last-child) {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
+  height: 88px;
 }
