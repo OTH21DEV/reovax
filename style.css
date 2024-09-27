@@ -24,6 +24,7 @@
   --primary-background-color: #ffffff;
   --primary-input-background-color: #fff7f3;
   --primary-social-background-color: #f3f7f4;
+  --primary-main-background-color:#f2f7f3;
 
   /*Colors*/
   --primary-color: #1f1f1f;
@@ -67,7 +68,7 @@ li {
 .header {
   display: flex;
   flex-direction: column;
-  padding: 16px 312px 22px;
+  padding: 16px 312px 0;
   position: relative;
 }
 /*Top header bar*/
@@ -201,18 +202,23 @@ li {
 .header__main-bar {
   padding: 22px 0;
   position: relative;
+  display:flex;
+  align-items: center;
+  height:67px;
 }
 .header__main-bar::after {
   content: "";
   position: absolute;
   left: -312px;
   right: -312px;
-  bottom: 2px;
+  /* bottom: 2px; */
+  bottom:0;
   height: 1px;
   background-color: var(--primary-header-border);
 }
 .header__menu {
   display: flex;
+  align-items: center;
 }
 .header__menu-item:not(:last-child) {
   margin-right: 111px;
@@ -225,6 +231,9 @@ li {
   line-height: var(--primary-line-height-small);
   text-transform: uppercase;
   position: relative;
+}
+.header__menu-link:hover {
+  color: var(--primary-accent-color-1);
 }
 .header__menu-link::after {
   content: "";
@@ -242,3 +251,78 @@ li {
   left: 0;
   z-index: 4;
 }
+/*Main section*/
+
+.main {
+  display: flex;
+  position:relative;
+  height:689px;
+  padding: 100px 0 120px 312px;
+  background-color: var(--primary-main-background-color);
+}
+/*Main content*/
+.main__content {
+  height: 469px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main__title {
+  font-weight: var(--primary-font-weight-bold);
+  font-size: var(--primary-font-size-largest);
+  color: var(--primary-color);
+  line-height: var(--primary-line-height-largest);
+  margin-bottom: ;
+}
+.main__last-line {
+  color: var(--primary-accent-color-2);
+}
+/*Main buttons*/
+
+.main__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width:416px
+}
+.main__btn--price,
+.main__btn--how,
+.main__btn--feedback,
+.main__btn--promo {
+  background-color: transparent;
+  color: var(--primary-accent-color-1);
+}
+.main__btn--price {
+  width: 201px;
+  margin-right: 10px;
+}
+.main__btn--how {
+  width: 205px;
+}
+.main__btn--feedback {
+  width: 129px;
+  margin: 10px 10px 0 0;
+}
+.main__btn--promo {
+  width: 116px;
+  margin-top: 10px;
+}
+
+/*Main request button*/
+.main__btn--request{
+    width:199px;
+    background-color:var(--primary-accent-color-1);
+    color:var(--primary-background-color);
+}
+/*Main video circle container */
+.main__circle-container{
+    position :absolute;
+    top:52px;
+    right:832px;
+}
+/*Main picture */
+.main__picture{
+    position:absolute;
+    right:0;
+    top:0;
+}
+/*Advantages section*/
