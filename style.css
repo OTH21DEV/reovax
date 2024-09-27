@@ -274,7 +274,7 @@ li {
   font-size: var(--primary-font-size-largest);
   color: var(--primary-color);
   line-height: var(--primary-line-height-largest);
-  margin-bottom: ;
+  margin-bottom: 30px;
 }
 .main__last-line {
   color: var(--primary-accent-color-2);
@@ -331,7 +331,7 @@ li {
 .advantages {
   display: flex;
   padding: 62px 312px 100px;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 /*Advantage card */
 .advantages__card {
