@@ -87,7 +87,7 @@
     </header>
 
     <!-- Main Section -->
-    <section class="main" aria-labelledby="main-title">
+    <section class="main">
       <!-- Main content -->
       <div class="main__content">
         <h1 class="main__title">
@@ -119,32 +119,67 @@
       </div>
     </section>
 
-<!-- Advantages section -->
-<section class="advantages">
-    <!-- Advantage card -->
-    <article class="advantages__card">
-      <div class="advantages__header">
-        <img src="/assets/icons/credit_card_icon.png" alt="Иконка кредитной карты" />
-        <h2 class="advantages__title">Моментальный расчёт</h2>
+    <!-- Advantages section -->
+    <section class="advantages">
+      <!-- Advantage card -->
+      <article class="advantages__card" aria-labelledby="advantage-title-1">
+        <div class="advantages__header">
+          <div class="advantages__icon-wrapper">
+            <img class="advantages__icon" src="/assets/icons/credit_card_icon.png" alt="Иконка кредитной карты" />
+          </div>
+          <h2 id="advantage-title-1" class="advantages__title">Моментальный расчёт</h2>
+        </div>
+        <p class="advantages__description">Мгновенная оплата по безналичному расчету на месте приёма</p>
+      </article>
+
+      <!-- Advantage card -->
+      <article class="advantages__card" aria-labelledby="advantage-title-2">
+        <div class="advantages__header">
+          <div class="advantages__icon-wrapper">
+            <img class="advantages__icon" src="/assets/icons/trending_up_icon.png" alt="Иконка тренда вверх" />
+          </div>
+          <h2 id="advantage-title-2" class="advantages__title">Высокая цена закупки</h2>
+        </div>
+        <p class="advantages__description">Максимальная высокая цена закупки лома на рынке Санкт-Петербурга</p>
+      </article>
+
+      <!-- Advantage card -->
+      <article class="advantages__card" aria-labelledby="advantage-title-3">
+        <div class="advantages__header">
+          <div class="advantages__icon-wrapper">
+            <img class="advantages__icon" src="/assets/icons/truck_icon.png" alt="Иконка грузовика" />
+          </div>
+          <h2 id="advantage-title-3" class="advantages__title">Собственный автопарк</h2>
+        </div>
+        <p class="advantages__description">Свой автопарк, в составе которого более 30 единиц спецтехники</p>
+      </article>
+    </section>
+
+    <!-- About section -->
+    <section class="about" aria-labelledby="about-title">
+      <!-- About content  -->
+      <div class="about__content">
+        <!-- About title -->
+        <h2 id="about-title" class="about__title">
+          Комплексный<br />
+          сервис
+        </h2>
+        <!-- About description-->
+        <div class="about__paragraph-wrapper" aria-describedby="about-description">
+          <p id="about-description" class="about__paragraph">
+            Компания «ЭКОЛОМ» — ваш надежный партнер по переработке металлолома в Санкт-Петербурге. Мы стремимся к экологической ответственности, предлагая выгодные условия и профессиональный сервис
+            на всех этапах работы. Гарантируем честность, прозрачность и высокие цены на металлолом!
+          </p>
+          <p class="about__paragraph">
+            Помимо переработки лома, наша компания предлагает комплексные услуги, включая оценку состава металлов, вывоз и демонтаж. Мы осуществляем демонтаж любой сложности – от кораблей и зданий до
+            железнодорожных составов и путей. Наши опытные специалисты и собственный автопарк обеспечивают оперативность и надежность в выполнении задач.
+          </p>
+          <p class="about__paragraph">
+            Вместе с компанией «ЭКОЛОМ» вы получаете не только надежного партнера по переработке металлолома, но и комплексный сервис высочайшего уровня. Мы с удовольствием берем на себя все этапы
+            работы — от приёмки до вывоза и демонтажа.
+          </p>
+        </div>
       </div>
-      <p class="advantages__description">Мгновенная оплата по безналичному расчету на месте приёма</p>
-    </article>
-    <!-- Advantage card -->
-    <article class="advantages__card">
-      <div class="advantages__header">
-        <img src="/assets/icons/trending_up_icon.png" alt="Иконка тренда вверх" />
-        <h2 class="advantages__title">Высокая цена закупки</h2>
-      </div>
-      <p class="advantages__description">Максимальная высокая цена закупки лома на рынке Санкт-Петербурга</p>
-    </article>
-    <!-- Advantage card -->
-    <article class="advantages__card">
-      <div class="advantages__header">
-        <img src="/assets/icons/truck_icon.png" alt="Иконка грузовика" />
-        <h2 class="advantages__title">Собственный автопарк</h2>
-      </div>
-      <p class="advantages__description">Свой автопарк, в составе которого более 30 единиц спецтехники</p>
-    </article>
-  </section>
+    </section>
   </body>
 </html>

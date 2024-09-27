@@ -24,7 +24,7 @@
   --primary-background-color: #ffffff;
   --primary-input-background-color: #fff7f3;
   --primary-social-background-color: #f3f7f4;
-  --primary-main-background-color:#f2f7f3;
+  --primary-main-background-color: #f2f7f3;
 
   /*Colors*/
   --primary-color: #1f1f1f;
@@ -34,6 +34,7 @@
 
   /*Borders*/
   --primary-header-border: #e8e8e8;
+  --primary-advantages-border: var(--primary-header-border);
   /*
  
   #F95707
@@ -178,6 +179,7 @@ li {
 .header__email {
   font-weight: var(--primary-font-weight);
   opacity: 0.8;
+  text-decoration: none;
 }
 
 /*Header callback button*/
@@ -202,9 +204,9 @@ li {
 .header__main-bar {
   padding: 22px 0;
   position: relative;
-  display:flex;
+  display: flex;
   align-items: center;
-  height:67px;
+  height: 67px;
 }
 .header__main-bar::after {
   content: "";
@@ -212,7 +214,7 @@ li {
   left: -312px;
   right: -312px;
   /* bottom: 2px; */
-  bottom:0;
+  bottom: 0;
   height: 1px;
   background-color: var(--primary-header-border);
 }
@@ -255,8 +257,8 @@ li {
 
 .main {
   display: flex;
-  position:relative;
-  height:689px;
+  position: relative;
+  height: 689px;
   padding: 100px 0 120px 312px;
   background-color: var(--primary-main-background-color);
 }
@@ -282,7 +284,7 @@ li {
 .main__buttons {
   display: flex;
   flex-wrap: wrap;
-  width:416px
+  width: 416px;
 }
 .main__btn--price,
 .main__btn--how,
@@ -308,21 +310,109 @@ li {
 }
 
 /*Main request button*/
-.main__btn--request{
-    width:199px;
-    background-color:var(--primary-accent-color-1);
-    color:var(--primary-background-color);
+.main__btn--request {
+  width: 199px;
+  background-color: var(--primary-accent-color-1);
+  color: var(--primary-background-color);
 }
 /*Main video circle container */
-.main__circle-container{
-    position :absolute;
-    top:52px;
-    right:832px;
+.main__circle-container {
+  position: absolute;
+  top: 52px;
+  right: 832px;
 }
 /*Main picture */
-.main__picture{
-    position:absolute;
-    right:0;
-    top:0;
+.main__picture {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 /*Advantages section*/
+.advantages {
+  display: flex;
+  padding: 62px 312px 100px;
+  justify-content: space-between;
+}
+/*Advantage card */
+.advantages__card {
+  width: 416px;
+  height: 152px;
+  padding: 20px 0px 24px 30px;
+  /* padding: 20px 84px 24px 30px; */
+  border: 1px solid var(--primary-advantages-border);
+  border-radius: 15px;
+}
+.advantages__card:not(:last-child) {
+  margin-right: 24px;
+}
+.advantages__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.advantages__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: var(--primary-accent-color-2);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.advantages__title {
+  font-weight: var(--primary-font-weight-bold);
+  font-size: var(--primary-font-size-medium);
+  line-height: var(--primary-line-height-medium);
+  color: var(--primary-color);
+}
+.advantages__description {
+  font-weight: var(--primary-font-weight);
+  font-size: var(--primary-font-size-small);
+  line-height: var(--primary-line-height-small);
+  color: var(--primary-color);
+  width: 302px;
+}
+/*About section*/
+.about {
+  display: flex;
+  padding: 0 312px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+/*About content*/
+.about__content {
+  border: 2px solid var(--primary-accent-color-1);
+  border-left: none;
+  border-right: none;
+  padding: 42px 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/*About title*/
+.about__title {
+  font-weight: var(--primary-font-weight-bold);
+  font-size: var(--primary-font-size-large);
+  line-height: var(--primary-line-height-large);
+  color: var(--primary-color);
+  width: 297px;
+}
+/*About description*/
+.about__paragraph-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 746px;
+}
+.about__paragraph {
+  font-size: var(--primary-font-size-small);
+  font-weight: var(--primary-font-weight);
+  line-height: var(--primary-line-height-small);
+  color: var(--primary-color);
+}
+.about__paragraph:not(:last-child) {
+  padding-bottom: 32px;
+}
